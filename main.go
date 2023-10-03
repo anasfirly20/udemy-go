@@ -1,10 +1,8 @@
 package main
 
-func main(){
-	cards := newDeck()
-	cards.saveToFile("my_cards")
-}
+import "fmt"
 
-func newCard() string {
-	return "Five of diamonds"
+func main(){
+	cards := newDeckFromFile("my_cards")
+	fmt.Println(cards)
 }
